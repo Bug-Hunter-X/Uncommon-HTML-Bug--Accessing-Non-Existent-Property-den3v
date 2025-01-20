@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    //Attempting to access a property that does not exist will throw an error
+    //This is a common error, but many developers forget that this will trigger an error in the browser's console
+    document.getElementById("myDiv").nonExistentProperty.value = "Hello"; 
+  </script>
+</body>
+</html>
